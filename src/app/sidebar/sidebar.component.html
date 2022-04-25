@@ -1,0 +1,17 @@
+<button (click)="sidebarShow !sidebarShow">toggle button</button>
+<div class="sidebar" [class.slide-in]="sidebarShow">
+<div
+    class="close"
+    (click)="sidebarShow = !sidebarShow"
+>
+    X
+</div>
+<div class="content">
+    <h2>Sidebar</h2>
+    <div>Home Page</div>
+    <div>About Us</div>
+    <div>Services</div>
+    <div>Portfolio</div>
+    <div>Contact Us</div>
+</div>
+</div>
