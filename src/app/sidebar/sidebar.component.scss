@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #4451ff;
+  transform: translateX(-100%);
+  transition: ease-in-out 300ms transform;
+  width: 300px;
+  &.slide-in {
+    transform: translateX(0%);
+    transition: ease-in-out 600ms transform;
+  }
+  .close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    padding: 16px;
+    height: 100%;
+  }
+}
